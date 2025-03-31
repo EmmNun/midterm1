@@ -1,82 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPORT VOLLEYBALL - Início</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Volleyball World - Home</title>
+    <meta name="description" content="Everything about volleyball - history, rules, players and more">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1>SPORT VOLLEYBALL</h1>
-        </div>
-        <nav>
+        <h1>Volleyball World</h1>
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="history.html">História</a></li>
-                <li><a href="how-to-play.html">Como Jogar</a></li>
-                <li><a href="courts.html">Quadras</a></li>
-                <li><a href="players.html">Jogadores</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner de Evento (inspirado na imagem 2) -->
-    <div class="event-banner">
-        <h2>Circuito Brasileiro de Vôlei de Praia</h2>
-        <p>Acompanhe os jogos ao vivo no Canal Vôlei Brasil</p>
-        <a href="#" class="cbv-button">Saiba mais →</a>
-    </div>
+    <main>
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1544464077-376d969d5b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                 alt="Volleyball action shot" class="hero-image">
+            <div class="hero-text">
+                <h2>Welcome to Volleyball World</h2>
+                <p>Your complete guide to the exciting sport of volleyball</p>
+            </div>
+        </section>
 
-    <div class="container">
-        <aside>
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="history.html#origin">Origem do Vôlei</a></li>
-                <li><a href="how-to-play.html#rules">Regras Básicas</a></li>
-                <li><a href="courts.html">Tipos de Quadras</a></li>
-                <li><a href="history.html#world">Vôlei pelo Mundo</a></li>
-                <li><a href="players.html">Melhores Jogadores</a></li>
-                <li><a href="#gallery">Fotos e Vídeos</a></li>
-            </ul>
-        </aside>
+        <section class="features">
+            <article class="feature-card">
+                <h3>Learn the History</h3>
+                <p>Discover how volleyball was invented and how it evolved into the modern game.</p>
+                <a href="history.html" class="btn">Read More</a>
+            </article>
 
-        <main>
-            <section class="hero">
-                <h2>Como o Vôlei Surgiu</h2>
-                <img src="https://source.unsplash.com/random/800x400/?volleyball" alt="Vôlei em ação">
-                <p>O voleibol foi criado em 1895 por William G. Morgan nos Estados Unidos. Originalmente chamado de "mintonette", o esporte foi desenvolvido como uma alternativa menos intensa ao basquete para membros mais velhos da YMCA.</p>
-            </section>
+            <article class="feature-card">
+                <h3>Master the Rules</h3>
+                <p>Understand the basic rules and regulations that govern the game.</p>
+                <a href="rules.html" class="btn">Read More</a>
+            </article>
 
-            <section>
-                <h2>Como Jogar Vôlei</h2>
-                <p>O vôlei é jogado por duas equipes de seis jogadores em uma quadra dividida por uma rede. O objetivo é fazer a bola tocar o chão no campo adversário. Cada equipe pode tocar a bola até três vezes antes de enviá-la para o outro lado.</p>
-            </section>
-
-            <section id="gallery">
-                <h2>Fotos e Vídeos de Jogadas</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="https://source.unsplash.com/random/300x300/?volleyball,court" alt="Quadra de vôlei">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://source.unsplash.com/random/300x300/?volleyball,player" alt="Jogador de vôlei">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://source.unsplash.com/random/300x300/?volleyball,ball" alt="Bola de vôlei">
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+            <article class="feature-card">
+                <h3>Meet the Players</h3>
+                <p>Learn about the greatest volleyball players in history.</p>
+                <a href="players.html" class="btn">Read More</a>
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Sport Volleyball - Todos os direitos reservados</p>
+        <p>&copy; 2023 Volleyball World. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
