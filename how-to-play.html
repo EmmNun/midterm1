@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Como Jogar Vôlei</title>
+    <title>SPORT VOLLEYBALL - How to Play</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,51 +11,64 @@
         <h1>SPORT VOLLEYBALL</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="history.html">História</a></li>
-                <li><a href="how-to-play.html">Como Jogar</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="how-to-play.html" class="active">How to Play</a></li>
+                <li><a href="players.html">Players</a></li>
             </ul>
         </nav>
     </header>
 
-    <aside class="sidebar">
-        <h3>Menu</h3>
-        <ul>
-            <li><a href="history.html">Origem do Vôlei</a></li>
-            <li><a href="how-to-play.html">Regras Básicas</a></li>
-            <li><a href="#">Tipos de Quadras</a></li>
-            <li><a href="#">Vôlei pelo Mundo</a></li>
-            <li><a href="#">Melhores Jogadores</a></li>
-            <li><a href="#">Fotos e Videos</a></li>
-        </ul>
-    </aside>
+    <div class="container">
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="history.html#origin">Volleyball Origin</a></li>
+                <li><a href="#rules">Basic Rules</a></li>
+                <li><a href="#courts">Court Types</a></li>
+                <li><a href="history.html#world">Volleyball Around the World</a></li>
+                <li><a href="players.html">Best Players</a></li>
+                <li><a href="index.html#gallery">Photos and Videos</a></li>
+            </ul>
+        </aside>
 
-    <main>
-        <article>
-            <h2>Como Jogar Vôlei</h2>
-            <img src="https://images.unsplash.com/photo-151680227340-7e4c4e723f4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Volleyball court">
-            <p>O vôlei é jogado por duas equipes de seis jogadores em uma quadra dividida por uma rede. O objetivo é fazer a bola tocar o chão no campo adversário. Cada equipe pode tocar a bola até três vezes antes de enviá-la para o outro lado.</p>
-            
-            <section class="rules-grid">
-                <div class="rule-card">
-                    <h3>Pontuação</h3>
-                    <p>Um jogo é disputado em melhor de 5 sets, com cada set indo até 25 pontos (exceto o 5º set que vai até 15).</p>
-                </div>
-                <div class="rule-card">
-                    <h3>Rotação</h3>
-                    <p>Os jogadores devem rodar no sentido horário sempre que sua equipe recupera o saque.</p>
-                </div>
-                <div class="rule-card">
-                    <h3>Fundamentos</h3>
-                    <p>Os principais fundamentos são: saque, recepção, levantamento, ataque, bloqueio e defesa.</p>
-                </div>
+        <main>
+            <section id="rules">
+                <h2>How to Play Volleyball</h2>
+                <img src="https://source.unsplash.com/random/800x400/?volleyball,game" alt="Volleyball game">
+                <article>
+                    <p>Volleyball is played by two teams of six players on a court divided by a net. The objective is to make the ball touch the ground in the opponent's court. Each team can touch the ball up to three times before sending it over to the other side.</p>
+                    
+                    <h3>Basic Rules:</h3>
+                    <ul>
+                        <li>A team scores a point when the ball touches the ground in the opponent's court or when the opponent commits a fault.</li>
+                        <li>The team that wins a rally scores a point and serves for the next point.</li>
+                        <li>A match is typically played to the best of five sets. The first four sets are played to 25 points, and the deciding fifth set is played to 15 points.</li>
+                        <li>A team must win a set by at least two points.</li>
+                        <li>Players rotate positions clockwise when their team wins back the right to serve.</li>
+                    </ul>
+                </article>
             </section>
-        </article>
-    </main>
+
+            <section id="courts">
+                <h2>Court Types</h2>
+                <img src="https://source.unsplash.com/random/800x400/?volleyball,court" alt="Volleyball court">
+                <article>
+                    <h3>Indoor Volleyball Court</h3>
+                    <p>The standard indoor volleyball court measures 18 meters (59 feet) long and 9 meters (29.5 feet) wide. The net height is 2.43 meters (7 feet 11 5/8 inches) for men and 2.24 meters (7 feet 4 1/8 inches) for women.</p>
+                    
+                    <h3>Beach Volleyball Court</h3>
+                    <p>A beach volleyball court is slightly smaller at 16 meters (52.5 feet) long and 8 meters (26.2 feet) wide. The playing surface is sand, which creates different dynamics compared to indoor play. The net height remains the same as indoor volleyball.</p>
+                    
+                    <h3>Grass/Outdoor Volleyball</h3>
+                    <p>Recreational or grass volleyball can be played on various surfaces including grass, concrete, or sand. Court dimensions may vary, but generally follow the standard measurements when possible.</p>
+                </article>
+            </section>
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2023 Volleyball Website. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Sport Volleyball - All rights reserved</p>
     </footer>
 
     <script src="script.js"></script>
