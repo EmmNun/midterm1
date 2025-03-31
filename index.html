@@ -4,57 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volleyball World - Home</title>
-    <meta name="description" content="Everything about volleyball - history, rules, players and more">
+    <meta name="description" content="Everything about volleyball">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Volleyball World</h1>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="players.html">Players</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <img src="https://images.unsplash.com/photo-1544464077-376d969d5b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                 alt="Volleyball action shot" class="hero-image">
-            <div class="hero-text">
-                <h2>Welcome to Volleyball World</h2>
-                <p>Your complete guide to the exciting sport of volleyball</p>
+    <div class="layout-container">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="logo">
+                <h1>Volleyball World</h1>
             </div>
-        </section>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <section class="features">
-            <article class="feature-card">
-                <h3>Learn the History</h3>
-                <p>Discover how volleyball was invented and how it evolved into the modern game.</p>
-                <a href="history.html" class="btn">Read More</a>
-            </article>
+        <!-- Main Content with Sidebar -->
+        <div class="content-wrapper">
+            <main class="main-content">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1544464077-376d969d5b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Volleyball action">
+                    </div>
+                    <div class="hero-text">
+                        <h2>Welcome to Volleyball World</h2>
+                        <p>Your complete guide to the exciting sport of volleyball</p>
+                    </div>
+                </section>
 
-            <article class="feature-card">
-                <h3>Master the Rules</h3>
-                <p>Understand the basic rules and regulations that govern the game.</p>
-                <a href="rules.html" class="btn">Read More</a>
-            </article>
+                <!-- Featured Sections -->
+                <section class="features">
+                    <article class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1516724562728-afc824a36e84?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                             alt="Volleyball history">
+                        <div class="feature-content">
+                            <h3>History of Volleyball</h3>
+                            <p>Discover how volleyball was invented and evolved into the modern game.</p>
+                            <a href="history.html" class="btn">Learn More</a>
+                        </div>
+                    </article>
 
-            <article class="feature-card">
-                <h3>Meet the Players</h3>
-                <p>Learn about the greatest volleyball players in history.</p>
-                <a href="players.html" class="btn">Read More</a>
-            </article>
-        </section>
-    </main>
+                    <article class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                             alt="Volleyball rules">
+                        <div class="feature-content">
+                            <h3>Game Rules</h3>
+                            <p>Understand the basic rules and regulations that govern the game.</p>
+                            <a href="rules.html" class="btn">Learn More</a>
+                        </div>
+                    </article>
 
-    <footer>
-        <p>&copy; 2023 Volleyball World. All rights reserved.</p>
-    </footer>
+                    <article class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                             alt="Volleyball players">
+                        <div class="feature-content">
+                            <h3>Famous Players</h3>
+                            <p>Learn about the greatest volleyball players in history.</p>
+                            <a href="players.html" class="btn">Learn More</a>
+                        </div>
+                    </article>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>Upcoming Events</h3>
+                    <ul class="event-list">
+                        <li>
+                            <span class="event-date">02-06 Apr</span>
+                            <span class="event-location">Saquarema/RJ</span>
+                            <span class="event-desc">Brazil Volleyball Championship</span>
+                        </li>
+                        <li>
+                            <span class="event-date">15-20 Apr</span>
+                            <span class="event-location">Los Angeles</span>
+                            <span class="event-desc">International Beach Volleyball</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#">Volleyball Equipment</a></li>
+                        <li><a href="#">Training Tips</a></li>
+                        <li><a href="#">Local Clubs</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Volleyball World is dedicated to providing comprehensive information about volleyball.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@volleyballworld.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Volleyball World. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
