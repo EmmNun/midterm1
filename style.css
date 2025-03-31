@@ -1,92 +1,177 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo da página */
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background: url('https://source.unsplash.com/1600x900/?volleyball') no-repeat center center/cover;
-    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff9f7; /* Default grey */
+    transition: background-color 0.5s ease;
 }
 
-/* Cabeçalho */
 header {
-    background: #333;
-    padding: 15px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
     text-align: center;
 }
 
-header h1 {
-    color: orange;
-}
-
-/* Navegação */
 nav ul {
-    list-style: none;
-    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #c0392b;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: orange;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+    padding: 0.5rem 1rem;
+    display: block;
 }
 
-/* Menu lateral */
-.menu {
-    width: 20%;
-    background: #222;
-    padding: 20px;
-    position: absolute;
-    height: 100vh;
+nav ul li a:hover {
+    background-color: #a5281b;
 }
 
-.menu ul {
-    list-style: none;
+.sidebar {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
 }
 
-.menu ul li {
-    margin: 15px 0;
+.sidebar h3 {
+    margin-top: 0;
 }
 
-.menu ul li a {
-    color: orange;
-    text-decoration: none;
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Conteúdo principal */
-.content {
-    margin-left: 25%;
-    padding: 50px;
+article {
+    margin-bottom: 2rem;
 }
 
-/* Rodapé */
 footer {
-    background: #333;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
-/* Responsividade */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Grid layout for rules */
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.rule-card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact form styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Media Queries */
 @media (max-width: 1024px) {
-    .menu { width: 25%; }
+    .rules-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-    .menu { width: 30%; }
-    .content { margin-left: 35%; }
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        margin: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .menu { width: 100%; height:
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero img {
+        height: 200px;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+}
