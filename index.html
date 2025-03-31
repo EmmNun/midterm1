@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPORT VOLLEYBALL - Home</title>
+    <title>SPORT VOLLEYBALL - Início</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>SPORT VOLLEYBALL</h1>
+        <div class="header-container">
+            <h1>SPORT VOLLEYBALL</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="how-to-play.html">How to Play</a></li>
-                <li><a href="players.html">Players</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="history.html">História</a></li>
+                <li><a href="how-to-play.html">Como Jogar</a></li>
+                <li><a href="courts.html">Quadras</a></li>
+                <li><a href="players.html">Jogadores</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Banner de Evento (inspirado na imagem 2) -->
+    <div class="event-banner">
+        <h2>Circuito Brasileiro de Vôlei de Praia</h2>
+        <p>Acompanhe os jogos ao vivo no Canal Vôlei Brasil</p>
+        <a href="#" class="cbv-button">Saiba mais →</a>
+    </div>
 
     <div class="container">
         <aside>
             <h2>Menu</h2>
             <ul>
-                <li><a href="history.html#origin">Volleyball Origin</a></li>
-                <li><a href="how-to-play.html#rules">Basic Rules</a></li>
-                <li><a href="how-to-play.html#courts">Court Types</a></li>
-                <li><a href="history.html#world">Volleyball Around the World</a></li>
-                <li><a href="players.html">Best Players</a></li>
-                <li><a href="#gallery">Photos and Videos</a></li>
+                <li><a href="history.html#origin">Origem do Vôlei</a></li>
+                <li><a href="how-to-play.html#rules">Regras Básicas</a></li>
+                <li><a href="courts.html">Tipos de Quadras</a></li>
+                <li><a href="history.html#world">Vôlei pelo Mundo</a></li>
+                <li><a href="players.html">Melhores Jogadores</a></li>
+                <li><a href="#gallery">Fotos e Vídeos</a></li>
             </ul>
         </aside>
 
         <main>
             <section class="hero">
-                <h2>Welcome to the World of Volleyball</h2>
-                <img src="https://source.unsplash.com/random/800x400/?volleyball" alt="Volleyball in action">
-                <p>Discover the excitement of volleyball, one of the most dynamic and widely played sports in the world. Here you'll find information about its history, rules, techniques, and the best players.</p>
+                <h2>Como o Vôlei Surgiu</h2>
+                <img src="https://source.unsplash.com/random/800x400/?volleyball" alt="Vôlei em ação">
+                <p>O voleibol foi criado em 1895 por William G. Morgan nos Estados Unidos. Originalmente chamado de "mintonette", o esporte foi desenvolvido como uma alternativa menos intensa ao basquete para membros mais velhos da YMCA.</p>
+            </section>
+
+            <section>
+                <h2>Como Jogar Vôlei</h2>
+                <p>O vôlei é jogado por duas equipes de seis jogadores em uma quadra dividida por uma rede. O objetivo é fazer a bola tocar o chão no campo adversário. Cada equipe pode tocar a bola até três vezes antes de enviá-la para o outro lado.</p>
             </section>
 
             <section id="gallery">
-                <h2>Image Gallery</h2>
+                <h2>Fotos e Vídeos de Jogadas</h2>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="https://source.unsplash.com/random/300x200/?volleyball,court" alt="Volleyball court">
+                        <img src="https://source.unsplash.com/random/300x300/?volleyball,court" alt="Quadra de vôlei">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://source.unsplash.com/random/300x200/?volleyball,player" alt="Volleyball player">
+                        <img src="https://source.unsplash.com/random/300x300/?volleyball,player" alt="Jogador de vôlei">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://source.unsplash.com/random/300x200/?volleyball,ball" alt="Volleyball ball">
+                        <img src="https://source.unsplash.com/random/300x300/?volleyball,ball" alt="Bola de vôlei">
                     </div>
                 </div>
             </section>
@@ -57,7 +74,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Sport Volleyball - All rights reserved</p>
+        <p>&copy; 2025 Sport Volleyball - Todos os direitos reservados</p>
     </footer>
 
     <script src="script.js"></script>

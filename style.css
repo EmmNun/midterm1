@@ -1,61 +1,84 @@
-/* Enhanced CSS with more Grid and Flexbox */
+/* Estilo atualizado - Cores e Layout inspirado no Vôlei Brasil */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    transition: background-color 0.5s ease;
+:root {
+    --primary-color: #054095; /* Azul escuro */
+    --secondary-color: #ffcc00; /* Amarelo */
+    --accent-color: #ff6600; /* Laranja */
+    --dark-bg: #333333; /* Fundo escuro */
+    --light-bg: #f5f5f5; /* Fundo claro */
+    --text-light: #ffffff;
+    --text-dark: #333333;
 }
 
-/* Header and Navigation - Enhanced Flexbox */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+}
+
+/* Header e Navigation - Inspirado na imagem 2 */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 0;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.header-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
 }
 
 header h1 {
-    margin-bottom: 1rem;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+nav {
+    background-color: var(--dark-bg);
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
-    max-width: 600px;
+    justify-content: flex-end;
+    padding: 0.5rem 2rem;
 }
 
 nav ul li {
-    flex: 1;
-    text-align: center;
+    margin-left: 1.5rem;
 }
 
 nav ul li a {
-    color: #f98638;
+    color: var(--accent-color);
     text-decoration: none;
     padding: 0.5rem;
     transition: all 0.3s ease;
-    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.95rem;
 }
 
 nav ul li a:hover {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
 }
 
 nav ul li a.active {
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    color: var(--text-light);
+    border-bottom: 2px solid var(--accent-color);
 }
 
-/* Container Layout - Enhanced Grid */
+/* Container Layout - Baseado na imagem 1 */
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -64,45 +87,48 @@ nav ul li a.active {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
-    min-height: 80vh; /* Ensure minimum height */
+    min-height: 80vh;
+    background-color: var(--light-bg);
 }
 
-/* Sidebar */
+/* Sidebar - Estilo baseado na imagem 1 */
 aside {
     grid-area: sidebar;
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 5px;
+    background-color: var(--dark-bg);
+    padding: 1.5rem;
+    border-radius: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--text-light);
 }
 
 aside h2 {
-    margin-bottom: 1rem;
-    color: #333;
-    text-align: center;
-    border-bottom: 2px solid #f98638;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    text-align: left;
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 aside ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 
 aside ul li a {
-    color: #f98638;
+    color: var(--accent-color);
     text-decoration: none;
     transition: all 0.3s ease;
     display: block;
     padding: 0.5rem;
-    border-radius: 3px;
+    font-weight: 500;
 }
 
 aside ul li a:hover {
-    color: #333;
-    background-color: rgba(249, 134, 56, 0.1);
+    color: var(--text-light);
+    background-color: rgba(255, 102, 0, 0.2);
 }
 
 /* Main Content */
@@ -112,29 +138,38 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
 }
 
 section {
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: var(--dark-bg);
+    border-radius: 0;
     padding: 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-rows: auto auto 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 h2 {
-    margin-bottom: 0.5rem;
-    color: #333;
-    border-bottom: 2px solid #f98638;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: var(--text-light);
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
 }
 
 section img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -142,7 +177,7 @@ section img {
 .hero {
     display: grid;
     grid-template-rows: auto auto auto;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -151,19 +186,20 @@ section img {
     line-height: 1.8;
 }
 
-/* Gallery Grid - Enhanced Grid */
+/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--text-light);
     transition: transform 0.3s ease;
+    aspect-ratio: 1/1;
 }
 
 .gallery-item:hover {
@@ -172,7 +208,7 @@ section img {
 
 .gallery-item img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -181,7 +217,7 @@ section img {
     transform: scale(1.05);
 }
 
-/* Players Grid - Enhanced Flexbox */
+/* Players Grid */
 .players-grid {
     display: flex;
     flex-wrap: wrap;
@@ -193,8 +229,8 @@ section img {
 .player-card {
     flex: 1 0 calc(33.33% - 1rem);
     min-width: 250px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
     padding: 1.2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -212,17 +248,17 @@ section img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 0;
 }
 
 .player-card h4 {
     margin-top: 0.5rem;
-    color: #333;
-    border-bottom: 1px solid #ddd;
+    color: var(--text-light);
+    border-bottom: 1px solid var(--accent-color);
     padding-bottom: 0.5rem;
 }
 
-/* Rules Section - Grid Layout */
+/* Rules Section */
 #rules article {
     display: grid;
     grid-template-rows: auto auto;
@@ -232,12 +268,16 @@ section img {
 #rules ul {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 0.8rem;
     list-style-position: inside;
     padding-left: 1rem;
 }
 
-/* Courts Section - Flexbox Layout */
+#rules ul li {
+    color: var(--text-light);
+}
+
+/* Courts Section */
 #courts article {
     display: flex;
     flex-direction: column;
@@ -245,21 +285,61 @@ section img {
 }
 
 #courts article h3 {
-    color: #f98638;
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
     text-align: center;
     padding: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 0;
+    border-top: 3px solid var(--accent-color);
 }
 
-/* Media Queries - Enhanced Responsive Design */
-/* Tablets */
+/* Botão Estilo CBV */
+.cbv-button {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-light);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    margin-top: 1rem;
+}
+
+.cbv-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Banner de evento - inspirado na imagem 2 */
+.event-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/random/1200x400/?volleyball,beach') center/cover;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-banner h2 {
+    font-size: 2.5rem;
+    border: none;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -275,8 +355,7 @@ footer {
     }
     
     nav ul li {
-        flex: 0 0 auto;
-        margin-bottom: 0.5rem;
+        margin: 0.3rem;
     }
     
     .gallery-grid {
@@ -287,30 +366,19 @@ footer {
         flex: 0 0 calc(50% - 0.75rem);
     }
     
-    body {
-        font-size: 16px;
-        padding: 10px;
-    }
-    
-    aside {
-        margin-bottom: 1rem;
-    }
-    
-    aside ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    aside ul li {
-        flex: 0 0 auto;
+    .event-banner h2 {
+        font-size: 2rem;
     }
 }
 
-/* Small Screens/Mobile */
 @media (max-width: 480px) {
     header {
         text-align: center;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        padding: 1rem;
     }
     
     nav ul {
@@ -321,8 +389,8 @@ footer {
     
     nav ul li {
         width: 100%;
-        margin-right: 0;
-        margin-bottom: 0.5rem;
+        text-align: center;
+        margin: 0.2rem 0;
     }
     
     .gallery-grid {
@@ -340,19 +408,8 @@ footer {
     section {
         padding: 1rem;
     }
-}
-
-/* Laptops */
-@media (max-width: 1024px) {
-    .container {
-        max-width: 90%;
-    }
     
-    .gallery-grid {
-        gap: 0.75rem;
-    }
-    
-    .player-card {
-        padding: 1rem;
+    .event-banner h2 {
+        font-size: 1.5rem;
     }
 }
